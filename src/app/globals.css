@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer base {
+    :root {
+        --background: 220, 81%, 11%; /* Темный фон #15171C */
+        --foreground: 0, 0%, 90%; /* Светлый текст */
+
+        --card: 220, 10%, 15%; /* Фон карточек */
+        --card-foreground: 0, 0%, 90%; /* Текст на карточках */
+
+        --popover: 220, 10%, 20%; /* Всплывающий фон */
+        --popover-foreground: 0, 0%, 90%; /* Текст всплывающего окна */
+
+        --primary: 210, 100%, 50%; /* Основной акцентный цвет (яркий синий) */
+        --primary-hover: 210, 100%, 40%; /* Акцентный цвет при наведении */
+        --primary-foreground: 0, 0%, 100%; /* Текст на акцентном цвете */
+
+        --secondary: 0, 0%, 80%; /* Вторичный цвет (яркий синий) */
+        --secondary-foreground: 210, 50%, 20%; /* Текст на вторичном фоне */
+
+        --muted: 220, 10%, 30%; /* Приглушённый цвет */
+        --muted-foreground: 0, 0%, 90%; /* Текст на приглушённом фоне */
+
+        --accent: 210, 100%, 30%; /* Акцентный цвет (яркий синий) */
+        --accent-foreground: 0, 0%, 90%; /* Текст на акцентном фоне */
+
+        --destructive: 0, 100%, 50%; /* Разрушающий цвет (яркий красный) */
+        --destructive-foreground: 0, 0%, 90%; /* Текст на разрушающем фоне */
+
+        --border: 220, 10%, 20%; /* Цвет границы */
+        --input: 220, 10%, 20%; /* Фон ввода */
+        --ring: 210, 100%, 50%; /* Цвет кольца */
+
+        --radius: 0.5rem; /* Закругленные углы */
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
