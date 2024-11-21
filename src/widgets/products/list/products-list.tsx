@@ -6,7 +6,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Icon from '@/shared/ui/icon';
 import { ProductCardMini } from '@/shared/ui/product-card-mini';
 import { useCart } from '@/shared/cart/cart-store';
-import { Product } from '@/shared/types/chats';
+import { Product } from '@/shared/types/product';
 
 interface ProductsListProps {
     products: Product[];
@@ -90,8 +90,8 @@ export const ProductInfo = (props: ProductInfoProps) => {
                     onClick={() => {
                         router.push('/shop');
                     }}
-                    color={'hsl(223, 66%, 44%)'}
-                    className={'border p-2 cursor-pointer border-primary rounded-full'}
+                    color={'hsl(var(--primary))'}
+                    className={'border border-gray-600 p-2 cursor-pointer rounded-full'}
                     size={40}
                     name={'ArrowLeft'}
                 />

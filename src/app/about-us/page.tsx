@@ -10,7 +10,7 @@ export default function AboutUsPage() {
     return (
         <>
             <div className="rounded-2xl px-4 lg:px-6 w-full max-w-7xl mx-auto  mb-10">
-                <div className="flex flex-col gap-14items-center lg:gap32">
+                <div className="flex flex-col gap-14 items-center lg:gap32">
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
                             <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
@@ -62,7 +62,6 @@ export default function AboutUsPage() {
                             </Button>
                         </div>
                     </div>
-
                     <section className="py-8 antialiased md:py-16">
                         <div className="mx-auto flex justify-center max-w-screen-xl px-4 2xl:px-0">
                             <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg">
